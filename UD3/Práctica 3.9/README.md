@@ -1,4 +1,5 @@
 # Práctica 3.9: Despliegue web con bases de datos en AWS. Nivel básico.
+#### Mónica Blanco, Alejandro Ruiz, Alejandro Priego
 
 ## EC2
 
@@ -36,9 +37,13 @@
 
 6. Sincronizamos la carpeta pública del servidor Apache con el contenido del Bucket S3:
    - Al tratarse de un servidor Ubuntu Server, debemos instalar AWS-CLI
-     - sudo apt install aws-cli
+     - sudo apt install awscli
    - Una vez instalada esta utilidad, sincronizamos el contenido con:
-     - sudo aws s3 sync s3://bdtrimestre1 /var/www/html
+     - sudo aws s3 sync s3://trabajoconjunto /var/www/html
+
+7. Instalamos PHP para que Apache sea capaz de interpretar nuestro programa Web
+   - sudo apt install php libapache2-mod-php php-mysql
+
 
 
 ## RDS
