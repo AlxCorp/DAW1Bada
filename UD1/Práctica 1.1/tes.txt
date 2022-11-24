@@ -1,0 +1,1 @@
+ssh -i "C:\Users\Alejandro\Desktop\maquinaubuntu.pem" ubuntu@44.211.144.51

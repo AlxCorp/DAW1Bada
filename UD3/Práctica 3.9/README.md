@@ -15,7 +15,7 @@
    - Creamos también un nuevo grupo de seguridad para definir reglas de entrada y salida personalizadas, en nuestro caso, por ahora, definiremos las reglas SSH (22), HTTP(80) y HTTPS(443), posteriormente definiremos otros
    - Asignamos 8GiB de disco duro a la máquina, en este caso en usaremos gp2
 
-    ![Captura 1](./Captura1.png)
+    ![Captura 1](./img/Captura1.png)
 
 3. Le asignaremos una IP estática (IP Elástica en AWS):
    - Dentro del panel EC2, en el apartado izquierdo, seleccionamos IP Elástica
@@ -32,7 +32,7 @@
    - sudo apt install apache2
    - sudo systemctl apache2
 
-    ![Captura 2](./Captura2.png)
+    ![Captura 2](./img/Captura2.png)
 
 6. Sincronizamos la carpeta pública del servidor Apache con el contenido del Bucket S3:
    - Al tratarse de un servidor Ubuntu Server, debemos instalar AWS-CLI
@@ -45,7 +45,7 @@
 
 - Crear la  database (Crear una base de datos), seleccione Create database.
 Ahora dispone de varias opciones de motor.  Hacer clic en el ícono de MySQL, seleccione Only enable options eligible for RDS Free Usage Tier (Permitir solo opciones elegibles para la capa de uso gratuita de RDS) y luego haga clic en Next (Siguiente).
-![Creación BD](./Captura3.png)
+![Creación BD](./img/Captura3.png)
 - Configurar la instancia de base de datos. La siguiente lista muestra un ejemplo de la configuración que puede utilizar para este tutorial:
 
 Especificaciones de la instancia:
@@ -137,8 +137,8 @@ En el cuadro de diálogo.  Escribe lo siguiente:
 - Username (Nombre de usuario): escriba el nombre de usuario que ha creado para la base de datos de Amazon RDS.  En este tutorial, es “masterUsername“.
 
 - Password (Contraseña): haga clic en Store in Vault (o Store in Keychain en MacOS) e introduzca la contraseña que usó al crear la base de datos de Amazon RDS.
-![Captura 4](./Captura4.png)
-![Captura 5](./Captura5.png)
+![Captura 4](./img/Captura4.png)
+![Captura 5](./img/Captura5.png)
 
 ## S3 
 
@@ -146,17 +146,17 @@ En el cuadro de diálogo.  Escribe lo siguiente:
 
 2.-  Le damos al recuadro naranja para crear un nuevo bucket
 
- ![CREAR BUCKET](./Captura6.jpeg)
+ ![CREAR BUCKET](./img/Captura6.jpeg)
 
 
 3.- Lo configuramos con el nombre que queramos y lo configuramos para que tenga una accesibilidad abierta. Para ello deseleccionamos la opción de BLOQUEAR TODO EL ACCESO PÚBLICO y aceptamos la advertencia. 
     
     
-![Deseleccionamos la opcion de BLOQEUAR ACCESO PUBLICO y aceptamos la advertencia](./Captura7.jpeg)
+![Deseleccionamos la opcion de BLOQEUAR ACCESO PUBLICO y aceptamos la advertencia](./img/Captura7.jpeg)
 4 Para subir el juego necesitaremos irnos a la ventana de objetos
 
-![Ventana objetos](./Captura8.jpeg)
+![Ventana objetos](./img/Captura8.jpeg)
 5 Una vez ahí, abrimos la ruta del la carpeta y la cargamos en el bucket. 
 
 6.- Previo a esto, tendremos que editar el config.php del juego para conectarlo a la base de datos. 
-    ![Captura 9](./Captura9.jpeg)
+    ![Captura 9](./img/Captura9.jpeg)
