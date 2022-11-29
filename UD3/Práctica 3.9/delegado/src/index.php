@@ -25,6 +25,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM alumno ORDER BY apellido1,apellid
       <div class="container">
         <h1 class="display-4">Sistema de elección de delegado</h1>
         <p class="lead">IES Gran Capitán - Curso 2022 / 2023</p>
+		<p>Mónica Blanco, Alejandro Ruiz, Alejandro Priego</p>
       </div>      
     </div>
 
