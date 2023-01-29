@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+}
+
+form {
+    margin: 10px auto;
+    width: 300px;
+}
+
+ul {
+    list-style: none;
+}
+
+#enviar {
+    margin-top: 10px;
+}
