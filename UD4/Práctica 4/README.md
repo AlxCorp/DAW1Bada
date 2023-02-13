@@ -112,3 +112,60 @@ Como segundo objetivo, debemos montar un Balanceador de Carga que reparta dicha 
    - Reiniciamos Apache
 
          sudo systemctl restart apache2
+
+7. Agregamos cambios a la web y creamos archivos formulario.
+         <form action="formulario.php">
+    		<input class="boton_personalizado" type="submit" value="Donativos Turquia y Siria " />
+	 </form>
+	 
+	 
+	 .form {
+	  width: 100%;
+	  max-width: 600px;
+	  margin: 0 auto;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
+	}
+
+	.form input {
+	  width: 90%;
+	  height: 30px;
+	  margin: 0.5rem;
+	}
+	.form input {
+	  width: 90%;
+	  height: 30px;
+	  margin: 0.5rem;
+	}
+
+	.form button {
+	  padding: 0.5em 1em;
+	  border: none;
+	  background: rgb(100, 200, 255);
+	  cursor: pointer;
+	}
+	  .center {
+	  margin: auto;
+	  width: 50%;
+	  border: 3px solid green;
+	  padding: 10px;
+	}
+
+	.boton_personalizado{
+          text-decoration: none;
+    	  padding: 10px;
+	  font-weight: 600;
+	  font-size: 20px;
+	  color: #ffffff;
+	  background-color: transparent;
+	  border-radius: 0px;
+	  border: 2px solid #EDD8D8;
+  	}
+  
+	.boton_personalizado:hover{
+	   color: #EDD8D8;
+	   background-color: transparent;
+	 }
+	
